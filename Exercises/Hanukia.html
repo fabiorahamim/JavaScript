@@ -1,0 +1,313 @@
+<html>
+
+<head>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #newcanvas {
+            display: block;
+            margin: 0 auto;
+            border: 1px solid black;
+            background-color: lightgray;
+            z-index: 0;
+        }
+
+        .flame1 {
+            animation: flicker 2s infinite ease-out alternate;
+            background-color: #ffc;
+            /* border:dotted 1px #ccc; */
+            border-radius: 50%;
+            border-bottom-left-radius: 50% 10%;
+            border-bottom-right-radius: 50% 30%;
+            bottom: 50%;
+            box-shadow: 0 -10px 1px 1px orange;
+            height: 8px;
+            left: 50%;
+            margin: 210px 177px;
+            overflow: hidden;
+            position: absolute;
+            transform-origin: bottom center;
+            transition: all 1s ease-out-bounce;
+            width: 5px;
+        }
+
+        .flame2 {
+            animation: flicker 2s infinite ease-out alternate;
+            background-color: #ffc;
+            /* border:dotted 1px #ccc; */
+            border-radius: 50%;
+            border-bottom-left-radius: 50% 10%;
+            border-bottom-right-radius: 50% 30%;
+            bottom: 50%;
+            box-shadow: 0 -10px 1px 1px orange;
+            height: 8px;
+            left: 50%;
+            margin: 210px 137px;
+            overflow: hidden;
+            position: absolute;
+            transform-origin: bottom center;
+            transition: all 1s ease-out-bounce;
+            width: 5px;
+        }
+
+        .flame3 {
+            animation: flicker 2s infinite ease-out alternate;
+            background-color: #ffc;
+            /* border:dotted 1px #ccc; */
+            border-radius: 50%;
+            border-bottom-left-radius: 50% 10%;
+            border-bottom-right-radius: 50% 30%;
+            bottom: 50%;
+            box-shadow: 0 -10px 1px 1px orange;
+            height: 8px;
+            left: 50%;
+            margin: 210px 97px;
+            overflow: hidden;
+            position: absolute;
+            transform-origin: bottom center;
+            transition: all 1s ease-out-bounce;
+            width: 5px;
+        }
+
+        .flame4 {
+            animation: flicker 2s infinite ease-out alternate;
+            background-color: #ffc;
+            /* border:dotted 1px #ccc; */
+            border-radius: 50%;
+            border-bottom-left-radius: 50% 10%;
+            border-bottom-right-radius: 50% 30%;
+            bottom: 50%;
+            box-shadow: 0 -10px 1px 1px orange;
+            height: 8px;
+            left: 50%;
+            margin: 210px 57px;
+            overflow: hidden;
+            position: absolute;
+            transform-origin: bottom center;
+            transition: all 1s ease-out-bounce;
+            width: 5px;
+        }
+
+        .flameshamash {
+            animation: flicker 2s infinite ease-out alternate;
+            background-color: #ffc;
+            /* border:dotted 1px #ccc; */
+            border-radius: 50%;
+            border-bottom-left-radius: 50% 10%;
+            border-bottom-right-radius: 50% 30%;
+            bottom: 50%;
+            box-shadow: 0 -10px 1px 1px orange;
+            height: 8px;
+            left: 50%;
+            margin: 225px -2px;
+            overflow: hidden;
+            position: absolute;
+            transform-origin: bottom center;
+            transition: all 1s ease-out-bounce;
+            width: 5px;
+        }
+
+        .flame5 {
+            animation: flicker 2s infinite ease-out alternate;
+            background-color: #ffc;
+            /* border:dotted 1px #ccc; */
+            border-radius: 50%;
+            border-bottom-left-radius: 50% 10%;
+            border-bottom-right-radius: 50% 30%;
+            bottom: 50%;
+            box-shadow: 0 -10px 1px 1px orange;
+            height: 8px;
+            left: 50%;
+            margin: 210px -63px;
+            overflow: hidden;
+            position: absolute;
+            transform-origin: bottom center;
+            transition: all 1s ease-out-bounce;
+            width: 5px;
+        }
+
+        .flame6 {
+            animation: flicker 2s infinite ease-out alternate;
+            background-color: #ffc;
+            /* border:dotted 1px #ccc; */
+            border-radius: 50%;
+            border-bottom-left-radius: 50% 10%;
+            border-bottom-right-radius: 50% 30%;
+            bottom: 50%;
+            box-shadow: 0 -10px 1px 1px orange;
+            height: 8px;
+            left: 50%;
+            margin: 210px -103px;
+            overflow: hidden;
+            position: absolute;
+            transform-origin: bottom center;
+            transition: all 1s ease-out-bounce;
+            width: 5px;
+        }
+
+        .flame7 {
+            animation: flicker 2s infinite ease-out alternate;
+            background-color: #ffc;
+            /* border:dotted 1px #ccc; */
+            border-radius: 50%;
+            border-bottom-left-radius: 50% 10%;
+            border-bottom-right-radius: 50% 30%;
+            bottom: 50%;
+            box-shadow: 0 -10px 1px 1px orange;
+            height: 8px;
+            left: 50%;
+            margin: 210px -143px;
+            overflow: hidden;
+            position: absolute;
+            transform-origin: bottom center;
+            transition: all 1s ease-out-bounce;
+            width: 5px;
+        }
+
+        .flame8 {
+            animation: flicker 2s infinite ease-out alternate;
+            background-color: #ffc;
+            /* border:dotted 1px #ccc; */
+            border-radius: 50%;
+            border-bottom-left-radius: 50% 10%;
+            border-bottom-right-radius: 50% 30%;
+            bottom: 50%;
+            box-shadow: 0 -10px 1px 1px orange;
+            height: 8px;
+            left: 50%;
+            margin: 210px -183px;
+            overflow: hidden;
+            position: absolute;
+            transform-origin: bottom center;
+            transition: all 1s ease-out-bounce;
+            width: 5px;
+        }
+        @keyframes flicker {
+            0% {
+                transform: scale(1);
+            }
+            20% {
+                transform: scale(1.1, 0.9) rotate(3deg);
+            }
+            50% {
+                transform: scale(1, 1.2);
+            }
+            80% {
+                transform: scale(0.9, 1.1) rotate(-3deg);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+
+    <script>
+        function Hanuka() {
+            var canvas = document.getElementById("newcanvas");
+            var context = canvas.getContext("2d");
+
+            //Square
+            // context.fillStyle = "blue";
+            // fillRect​(x, y, width, height) x <-> y |
+            // context.fillRect(50, 50, 100, 100);
+
+            //Tringle
+            // context.beginPath();
+            // context.moveTo(50, 50);
+            // context.lineTo(50,150);
+            // context.lineTo(100,100);
+            // context.fillStyle = "rgba(90, 180, 150, 0.5)";
+            // context.fill();
+
+            //Candles
+            context.beginPath();
+            context.fillStyle = "grey";
+            context.fillRect(475, 150, 10, 2);
+            context.fillRect(435, 150, 10, 2);
+            context.fillRect(395, 150, 10, 2);
+            context.fillRect(355, 150, 10, 2);
+            context.fillRect(296, 140, 10, 2);
+            context.fillRect(235, 150, 10, 2);
+            context.fillRect(195, 150, 10, 2);
+            context.fillRect(155, 150, 10, 2);
+            context.fillRect(115, 150, 10, 2);
+            context.stroke();
+            
+            //candles
+            context.fillStyle = "white";
+            context.fillRect(477, 110, 5, 40);
+            context.fillRect(437, 110, 5, 40);
+            context.fillRect(397, 110, 5, 40);
+            context.fillRect(357, 110, 5, 40);
+            context.fillRect(298, 100, 5, 40);
+            context.fillRect(237, 110, 5, 40);
+            context.fillRect(197, 110, 5, 40);
+            context.fillRect(157, 110, 5, 40);
+            context.fillRect(117, 110, 5, 40);
+            context.stroke();
+
+            //Outside 4
+            context.beginPath();
+            context.arc(300, 150, 60, 0, 1 * Math.PI, false);
+            context.strokeStyle = "grey";
+            context.stroke();
+
+            //Outside 3
+            context.beginPath();
+            context.arc(300, 150, 100, 0, 1 * Math.PI, false);
+            context.strokeStyle = "grey";
+            context.stroke();
+
+            //Outside 2
+            context.beginPath();
+            context.arc(300, 150, 140, 0, 1 * Math.PI, false);
+            context.strokeStyle = "grey";
+            context.stroke();
+
+            //Outside 1
+            context.beginPath();
+            context.arc(300, 150, 180, 0, 1 * Math.PI, false);
+            context.moveTo(110, 75);
+            context.strokeStyle = "grey";
+            context.stroke();
+
+            //Connector
+            context.fillStyle = "grey";
+            context.fillRect(300, 140, 2, 290);
+
+            //Circle
+            context.beginPath();
+            context.arc(300, 500, 80, 0, 1 * Math.PI, true);
+            context.moveTo(110, 75);
+            context.fillStyle = "grey";
+            context.fill();
+
+        }
+    </script>
+
+</head>
+
+<body onload="Hanuka()">
+    <canvas id="newcanvas" height="600" width="600">
+
+
+
+    </canvas>
+
+    <div class="flame1" onclick="classList.remove('flame1');"></div>
+    <div class="flame2" onclick="classList.remove('flame2');"></div>
+    <div class="flame3" onclick="classList.remove('flame3');"></div>
+    <div class="flame4" onclick="classList.remove('flame4');"></div>    
+    <div class="flameshamash" onclick="classList.remove('flameshamash');"></div>
+    <div class="flame5" onclick="classList.remove('flame5');"></div>
+    <div class="flame6" onclick="classList.remove('flame6');"></div>
+    <div class="flame7" onclick="classList.remove('flame7');"></div>
+    <div class="flame8" onclick="classList.remove('flame8');"></div>
+
+</body>
+
+</html>
